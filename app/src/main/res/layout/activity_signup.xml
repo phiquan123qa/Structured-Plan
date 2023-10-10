@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/signup_lable"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="32sp"
+                android:gravity="center"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/signup_username"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:hint="@string/signup_username"
+                android:textSize="17sp"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"
+                android:background="@drawable/plum_border"
+                android:autofillHints="emailAddress"
+                android:minHeight="48dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/signup_password"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:hint="@string/signup_password"
+                android:textSize="17sp"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/baseline_password_24"
+                android:drawablePadding="8dp"
+                android:background="@drawable/plum_border"
+                android:autofillHints="password"
+                android:minHeight="48dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/signup_passwordConfirm"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:hint="@string/signup_passwordConfirm"
+                android:textSize="17sp"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:background="@drawable/plum_border"
+                android:autofillHints="password"
+                android:minHeight="48dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                app:cornerRadius="20dp"
+                android:text="@string/signup_btnText"
+                android:id="@+id/signup_button"
+                android:textSize="18sp"
+                android:maxWidth="300dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signin_redirect"
+                android:text="@string/signin_Redirect"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
